@@ -1,0 +1,183 @@
+// TO-DO: reformat everything using tailwind for consistency later
+.heroWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 2rem;
+}
+
+.hero {
+    min-height: 70dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroContent {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroTitle {
+    width: fit-content;
+    font-size: 3rem;
+    font-family: "Poppins";
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background: linear-gradient(110deg, #ffffff 0%, #ffffff 35%, #626161 48%, #7f7f7f 52%, #ffffff 65%, #ffffff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s infinite linear;
+    background-size: 200% auto;
+}
+
+@keyframes shimmer {
+    from {
+        background-position: 200% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+
+.heroDescription {
+    font-size: 1.5rem;
+    max-width: 40dvw;
+}
+
+.heroImages {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    flex-shrink: 0;
+
+    &:hover  {
+        .heroCard:first-child {
+            transform: translate(-95%, -45%) rotate(-18deg);
+        }
+
+        .heroCard:last-child {
+            transform: translate(-10%, -55%) rotate(13deg);
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 40rem;
+        height: 30rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(
+            circle,
+            rgba(169, 149, 218, 0.15) 0%,
+            rgba(141, 182, 226, 0.07) 40%,
+            transparent 80%
+        );
+        filter: blur(2rem);
+        pointer-events: none;
+    }
+}
+
+.heroCard {
+    position: absolute;
+    width: 16dvw;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    user-select: none;
+    transition:
+        transform 300ms ease,
+        filter 350ms ease;
+    border-radius: 1rem;
+
+    &:first-child {
+        z-index: 1;
+        transform: translate(-85%, -45%) rotate(-14deg);
+    }
+
+    &:last-child {
+        z-index: 2;
+        transform: translate(-20%, -55%) rotate(9deg);
+    }
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.linkGlass {
+    width: 8rem;
+    height: 3rem;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.linkContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 0.7rem;
+    font-size: 1.15rem;
+}
+
+.registerLink {
+    width: 8.5rem;
+}
+
+.authLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.communityInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.status {
+    width: 0.7rem;
+    height: 0.7rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #4ade80;
+}
+
+.memberCount {
+    font-size: 1.1rem;
+    font-family: "Manrope";
+    font-weight: 400;
+}

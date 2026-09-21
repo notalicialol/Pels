@@ -1,0 +1,37 @@
+.bodyWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 80dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-size: 4rem;
+    font-family: "Poppins";
+    font-weight: 800;
+}
+
+.icon {
+    font-size: 12rem;
+    color: #202943;
+    margin-bottom: 2rem;
+}
+
+.subheader {
+    font-size: 1.7rem;
+    font-family: "Manrope";
+    font-weight: 400;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.link {
+    color: #d0baff;
+    text-decoration: underline;
+    transition: ease-in-out 0.2s;
+
+    &:hover {
+        color: #d0baff93;
+    }
+}

@@ -1,0 +1,29 @@
+@use "./styles/variables.scss" as *;
+
+:root {
+    --accent-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    font-family: "Manrope";
+    color: var(--accent-color);
+    
+    background: linear-gradient(145deg, #041231 0%, #141414 100%);
+    min-height: 100dvh;
+
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,134 @@
+.bodyWrapper {
+    padding: 2rem 10dvw;
+}
+
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    font-size: 2rem;
+    font-family: "Poppins";
+    font-weight: 800;
+}
+
+.infoHeader {
+    font-size: 1.5rem;
+    font-family: "Poppins";
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.accountInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.accountDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+    padding: 0 2rem;
+}
+
+.detailText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.sublabel {
+    font-size: 0.9rem;
+    font-family: "Manrope";
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.accountDetail {
+    display: flex;
+    flex-direction: row;
+    max-width: 80dvw;
+}
+
+.emailDetail {
+    width: 14rem;
+    text-align: right;
+}
+
+.label {
+    font-size: 1.2rem;
+    font-family: "Manrope";
+    font-weight: 600;
+}
+
+.detailWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: auto;
+}
+
+.detail {
+    font-size: 1.2rem;
+    font-family: "Manrope";
+    font-weight: 400;
+}
+
+.editGlass {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 5.5rem;
+    flex-shrink: 0;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.editWrapper {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.visibility {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: #d0baff;
+    }
+
+    i {
+        width: 1.5rem;
+        text-align: center;
+    }
+}

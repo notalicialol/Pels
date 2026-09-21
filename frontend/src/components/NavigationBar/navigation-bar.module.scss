@@ -1,0 +1,85 @@
+.wrapper {
+    position: sticky;
+    top: 0.1rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding-top: 5dvh;
+}
+
+.navigationBar {
+    height: 5rem;
+    width: 80dvw;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 1.5rem;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.logoImage {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    margin-right: 1.5rem;
+}
+
+.linkIcon {
+    font-size: 1.5rem;
+}
+
+.navLink {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.2s ease-in-out;
+
+    i {
+        position: absolute;
+        font-size: 1.5rem;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .linkIcon {
+        opacity: 1;
+    }
+
+    .linkSolidIcon {
+        opacity: 0;
+    }
+
+    &:hover, &.active {
+        color: #d0baff;
+
+        .linkIcon {
+            opacity: 0;
+        }
+
+        .linkSolidIcon {
+            opacity: 1;
+        }
+    }
+}
