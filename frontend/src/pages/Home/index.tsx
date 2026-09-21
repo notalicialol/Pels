@@ -14,8 +14,8 @@ export default function Home() {
                     <div className={styles.hero}>
                         <div className={styles.heroContent}>
                             <div className={styles.heroText}>
-                                <div className={styles.heroTitle}>{import.meta.env.VITE_APP_NAME || "Pels"}</div>
-                                <div className={styles.heroDescription}>{import.meta.env.VITE_APP_DESCRIPTION || "Web-based collecting game in which users collect cards of varying rarities and abilities, which are then used in battles with other players to strengthen abilities."}</div>
+                                <div className={styles.heroTitle}>Pels</div>
+                                <div className={styles.heroDescription}>Web-based collecting game in which users collect cards of varying rarities and abilities, which are then used in battles with other players to strengthen abilities.</div>
 
                                 <div className={styles.communityInfo}>
                                     <div className={styles.status} />

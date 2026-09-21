@@ -25,7 +25,7 @@ const App : React.FC = () => {
 
 	useEffect(() => {
 		const match = Object.values(routes).find((route: RouteType) => route.path === location.pathname);
-		document.title = match?.title || import.meta.env.VITE_APP_NAME || "Pels";
+		document.title = match?.title || "Pels";
 	}, [location.pathname]);
 
 	useEffect(() => {
