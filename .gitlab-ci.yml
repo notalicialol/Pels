@@ -14,8 +14,8 @@ pages:
 
   script:
     - pnpm build
-    - rm -rf public
-    - mv dist public
+    - rm -rf ../public
+    - mv dist ../public
   
   pages:
     publish: public
