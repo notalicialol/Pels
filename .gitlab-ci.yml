@@ -9,7 +9,6 @@ pages:
     - cd frontend
     - corepack enable
     - corepack prepare pnpm@9 --activate
-    - pnpm -v
     - pnpm config set store-dir .pnpm-store
     - pnpm install --frozen-lockfile
 
@@ -17,6 +16,9 @@ pages:
     - pnpm build
     - rm -rf public
     - mv dist public
+  
+  pages:
+    publish: public
 
   artifacts:
     paths:
@@ -25,4 +27,4 @@ pages:
 cache:
   key: pnpm
   paths:
-    - .pnpm-store
+    - frontend/.pnpm-store
