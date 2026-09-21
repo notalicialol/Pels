@@ -19,6 +19,7 @@
 		"skipLibCheck": true,
 		"allowImportingTsExtensions": true,
 		"resolveJsonModule": true,
+		"moduleResolution": "Node",
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
 		"isolatedModules": true,
